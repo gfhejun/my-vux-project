@@ -2,6 +2,7 @@ import Vue from 'vue'
 import VueRouter from '../node_modules/vue-router/dist/vue-router.js'
 
 import App from './App'
+import Login from './components/Login'
 import ApprovalList from './components/ApprovalList'
 import ApplyList from './components/ApplyList'
 import ApplyDetail from './components/ApplyDetail'
@@ -10,6 +11,10 @@ Vue.use(VueRouter);
 var router = new VueRouter();
 
 router.map({
+	'/login': {
+		component: Login,
+		name: "Login"
+	},
 	'/newapply': {
 		component: ApplyDetail,
 		name: "NewApply",
@@ -161,7 +166,7 @@ router.map({
 })
 
 router.redirect({
-	'*': '/applylist'
+	'*': '/login'
 })
 
 router.start(App, '#app');

@@ -14,8 +14,8 @@
     <group title="接待单位">
     	<x-textarea :value.sync="unit"></x-textarea>
     	<x-input class="text-right" title="接待人员" placeholder="提供搜索选人功能" :readonly="$route.type!='new'" :value.sync="employee" text-align="right"></x-input>
-    	<x-input class="text-right" title="接待人数" keyboard="number" :readonly="$route.type!='new'" :value.sync="amount" text-align="right"></x-input>
-    	<x-input class="text-right" title="费用预算(元)" keyboard="number" :readonly="$route.type!='new'" :value.sync="expense" text-align="right"></x-input>
+    	<x-input class="text-right" title="接待人数" keyboard="number" :readonly="$route.type!='new'" :value.sync="amount" text-align="right" type="number"></x-input>
+    	<x-input class="text-right" title="费用预算(元)" keyboard="number" :readonly="$route.type!='new'" :value.sync="expense" text-align="right" type="number"></x-input>
     </group>
     <group title="说明事项">
     	<x-textarea :value.sync="description"></x-textarea>
