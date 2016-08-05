@@ -19,17 +19,17 @@
 </template>
 
 <script>
-import Tabbar from 'vux-components/tabbar'
-import TabbarItem from 'vux-components/tabbar-item'
-import XHeader from 'vux-components/x-header'
+  import Tabbar from 'vux-components/tabbar'
+  import TabbarItem from 'vux-components/tabbar-item'
+  import XHeader from 'vux-components/x-header'
 
-export default {
-  components: {
-    Tabbar,
-    TabbarItem,
-    XHeader
+  export default {
+    components: {
+      Tabbar,
+      TabbarItem,
+      XHeader
+    }
   }
-}
 </script>
 
 <style type="text/css">
