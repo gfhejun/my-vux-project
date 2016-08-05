@@ -43,6 +43,7 @@ export default{
 
 	#group{
 		word-break: break-all;
+		margin-top: 10px;
 	}
 
 	.weui_cell_bd{

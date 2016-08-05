@@ -9,16 +9,16 @@
     	<x-input title="接待结束时间" v-if="$route.type!='new'">2016-08-05</x-input>
     </group>
     <group title="接待事由">
-    	<x-textarea :value.sync="reason"></x-textarea>
+    	<x-textarea :value.sync="reason" placeholder="请输入接待事由.."></x-textarea>
     </group>
     <group title="接待单位">
-    	<x-textarea :value.sync="unit"></x-textarea>
-    	<x-input class="text-right" title="接待人员" placeholder="提供搜索选人功能" :readonly="$route.type!='new'" :value.sync="employee" text-align="right"></x-input>
-    	<x-input class="text-right" title="接待人数" keyboard="number" :readonly="$route.type!='new'" :value.sync="amount" text-align="right" type="number"></x-input>
+    	<x-textarea :value.sync="unit" placeholder="请输入接待单位.."></x-textarea>
+    	<x-input class="text-right" title="陪同员工" placeholder="提供搜索选人功能" :readonly="$route.type!='new'" :value.sync="employee" text-align="right"></x-input>
+    	<x-input class="text-right" title="总人数" keyboard="number" :readonly="$route.type!='new'" :value.sync="amount" text-align="right" type="number" placeholder="接待陪同总人数"></x-input>
     	<x-input class="text-right" title="费用预算(元)" keyboard="number" :readonly="$route.type!='new'" :value.sync="expense" text-align="right" type="number"></x-input>
     </group>
     <group title="说明事项">
-    	<x-textarea :value.sync="description"></x-textarea>
+    	<x-textarea :value.sync="description" placeholder="请输入说明事项.."></x-textarea>
     </group>
     <group v-if="$route.type=='new'">
     	<x-input title="审批人" :value.sync="approver" placeholder="提供搜索选人功能" :readonly="$route.type!='new'" class="text-right" text-align="right"></x-input>
