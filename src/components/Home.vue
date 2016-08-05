@@ -5,11 +5,11 @@
       <a slot="right" v-link="{name:'NewApply'}">新申请</a>
     </x-header>
     <tabbar>
-      <tabbar-item show-dot v-link="{name:'ApplyList'}">
+      <tabbar-item show-dot v-link="{name:'ApplyList'}" :selected="tab=='applylist'">
         <img slot="icon" src="https://o84lhz5xo.qnssl.com/master/src/assets/demo/icon_nav_button.png">
         <span slot="label">我的申请</span>
       </tabbar-item>
-      <tabbar-item show-dot v-link="{name:'ApprovalList'}">
+      <tabbar-item show-dot v-link="{name:'ApprovalList'}" :selected="tab=='approvallist'">
         <img slot="icon" src="https://o84lhz5xo.qnssl.com/master/src/assets/demo/icon_nav_article.png">
         <span slot="label">我的审批</span>
       </tabbar-item>
@@ -28,7 +28,8 @@
       Tabbar,
       TabbarItem,
       XHeader
-    }
+    },
+    props:['tab']
   }
 </script>
 

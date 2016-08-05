@@ -1,5 +1,5 @@
 <template>
-	<home></home>
+	<home tab="approvallist"></home>
 	<div id="list">
 		<scroller height="100%" :scrollbar-y="true" :lock-x="true" 
 		:use-pullup="false" :use-pulldown="false">
